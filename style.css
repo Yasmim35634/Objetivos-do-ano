@@ -1,18 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
 
 :root {
-  --cor-de-fundo: #1e1e1e;
-  --verde: #6fff57;
-  --branco: #ffffff;
-  --botao-ativo: #3a375e;
-  --botao-inativo: rgba(58, 55, 94, 0.5);
-  --texto-fundo: rgba(58, 55, 94, 0.3);
+  --cor-de-fundo: #ab779fea;
+  --verde: #ffffff;
+  --branco: #925b7e;
+  --botao-ativo: #600048;
+  --botao-inativo: rgba(255, 214, 249, 0.807);
+  --texto-fundo: rgba(199, 175, 199, 0.97);
 }
 
 body {
   background-color: var(--cor-de-fundo);
   color: var(--branco);
   font-family: "Chakra Petch", sans-serif;
+}
+
+.botao.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos {
+  background-color: var(--texto-fundo);
+  padding: 40px;
+  border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo{
+  display: none;
+}
+
+.aba-conteudo.ativo {
+  display: block;
+}
+
+.aba-conteudo-titulo-principal{
+  font-size: 28px;
+  text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+  text-align: center;
+  color: #99226e;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 .conteudo-principal {
@@ -33,6 +64,11 @@ body {
 
 .titulo-principal span {
   color: var(--verde);
+}
+
+.contador{
+  font-size: 30px;
+  text-align: center;
 }
 
 .botao {
